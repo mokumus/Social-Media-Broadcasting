@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1.2in]{geometry}
+\usepackage[toc,page]{appendix}
+\usepackage{graphicx}
+\usepackage[square,numbers]{natbib}
+\usepackage{lipsum}
+\usepackage{caption}
+\usepackage{pdfpages}
+\usepackage[turkish]{babel}
+\begin{document}
+
+\captionsetup[figure]{margin=1.5cm,font=small,labelfont={bf},name={Figure},labelsep=colon,textfont={it}}
+\captionsetup[table]{margin=1.5cm,font=small,labelfont={bf},name={Table},labelsep=colon,textfont={it}}
+\SetLipsumDefault{1}
+
+
+\begin{center}
+\thispagestyle{empty}
+{\LARGE Gebze Teknik Üniversitesi}\\[.5cm]
+{\Large Bilgisayar Mühendisliği Fakültesi}\\[3cm]
+{\linespread{1.2} {\Large Bitirme Raporu}}\\[0.5cm]
+{\huge \bfseries Sosyal Medya SMS Yayını}\\[1.5cm]
+\linespread{1}
+\includegraphics{Report/images/gebze_logo.png}\\
+\vspace{\fill}
+{\Large Danışman: Doç.Dr. Hasari Çelebi}\\[0.5cm]
+{\Large Öğrenci: Muhammed Okumuş}\\[0.5cm]
+{\Large 151044017}\\[0.5cm]
+{\Large \today}
+\end{center}
+
+\clearpage
+\pagenumbering{arabic}
+
+% -------------------------------------------------------------------
+% Contents, list of figures, list of tables
+% -------------------------------------------------------------------
+\newpage
+
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+\newpage
+
+% -------------------------------------------------------------------
+% Main sections (as required)
+% -------------------------------------------------------------------
+
+\input{sections/1_introduction.tex}
+\input{sections/2_background.tex}
+\input{sections/3_methodology.tex}
+\newpage
+\input{sections/5_discussion.tex}
+
+
+
+% -------------------------------------------------------------------
+% Bibliography
+% -------------------------------------------------------------------
+\newpage
+\bibliographystyle{plainnat}
+\bibliography{main} 
+
+% -------------------------------------------------------------------
+% Appendices
+% -------------------------------------------------------------------
+
+\newpage
+
+\end{document}
