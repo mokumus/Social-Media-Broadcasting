@@ -25,55 +25,69 @@ Toplu SMS yöntemleri ile dünyanın her yerine ulaşma imkanı olduğununa değ
   \item SMS Fiyatlandırmısanın Avantajları
   \item Kolay sistem entegrasyonu
 \end{itemize}
-\subsection{3. Özet}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-\subsection{4. Özet}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-\subsection{5. Özet}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-\subsection{6. Özet}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-\subsection{7. Özet}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-\subsection{8. Özet}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-\subsection{9. Özet}
+\subsection{API Nedir}
+Basit terimler ile Application Programming Interface (API) uygulamaların birbirleriyle etkileşmesini sağlaya yarar. API'ler web tabablı verilere(JSON veya XML) ulaşımda, bu verilerin değiştirilmesinde ve yeni verilen eklenmesinde kullanılır. Misal olarak Twitter'ın API'si sayesinde başka uygulamalardan Twitterin verisine erişim sağlanabilir.\cite{whatisapi}
+\subsection{JavaScript Ne İçin Kullanılır}
+Java script genelde web tabanlı uygulamar ve web tarayıcılarının programlanmasında kullanılır. Bunların yanısıra sunucularda ve gömülü sistemlerin kontrolünde de kullanılır. Ama en popüler kullanım sebebi web sitesi araclığıyla interaktif bir arayüz sağlanabilmesidir. Ayrıca JavaScript web tarayıcılarının "native" olarak anladığı tek programlama dilidir.\cite{whyjs}
+\subsection{Javascript Framework: React}
+React açık kaynak bir JavaScript kütüphanesidir ve Single-Page uygulamalar için kullanıcı arayüzü geliştirmede kullanılır. Facebook tarafından ilk defa kullanılmıştır. JSX adı verilen özel bir syntax'ı vardır. Bu syntax sayesinde hem JavaScript vs HTML'i karaşık olarak kullanma imkanı sunar. Hem iOS hem Android hemde Web uygulamarında kodun tekrar kullanımına olanak sağlar.\cite{react}
+\subsection{TCP (Transmission Control Protocol) }
+TCP bir network üzerindeki cihazlar için bir veri alışverişi standartıdır. 1973'de bilgisayar bilimcisi Robert E. Kahn ve Vinton G. Cerf tarafından bir araştırma makalesinde ilk defa bahsedilmiştir. Son versiyonu 2014 yılında RFC 7324'de\cite{RFC} tanımlanmıştır. TCP'nin şuan kullanımda olan haliyle iki taraflı veri alışverişine olanak sağlar. Tüm veri kayıpları otomatik olarak tespit edilir ve düzeltilir. Bu sebepten dolayı TCP güvenilir protokol olarak adlandırılır. TCP/IP protokol kavramlarıda bütünleşik olarak IP(Internet Protocol)'ünü kasıt ederek kullanılır. 
+\newline
+\newline
+TCP yazılımı web browserler ve sunucular tarfında kontrol edilir. Her bağlantı kaynağı açıkca bitiş noktalarını(end points, server-client) açıkca tanımlamaldır. Hangi tarafın hangi rolü(server yada client) üstenldiği önemli değildir. TCP yazılımına he endpoint için bir çift IP adresi ve port sağlanması yeterlidir(socket ve 2-tuple).
+
+
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{Report/images/tcp.png}
+    \caption{TCP 3-Way Handshake yöntemiyle bağlantı sağlama süreci}
+    \label{fig:mesh1}
+\end{figure}
+
+
+\subsection{Websocket Nedir}
+Websocket tek bir TCP bağlantısı ile 2 yönlü iletişimi sağlar. Websocket geliştirmek için birçok dil ve kütüphane mevcuttur.\cite{websocket1}
+\begin{itemize}
+  \item ASP.Net Core: SignalR
+  \item Node.js: Socket.IO, ws
+  \item WebSockets, ws4py
+\end{itemize}
+Websocket'ler TCP'nin üzerine kurulan protokollerdir ve ayrıca gerçeklenmesi gerekir. Python'da bu mimariyi gerçekleyen kütüphaneler mevucttur. Yukardıki maddelerde verilen örneklere ek olarak Python'da Tornado kütüphanesi verilebilir\cite{websocket2}.
+
+\subsection{Örnek Bildirim Motoru Mimarisi}
+Bu makalade "OracleAS Wireless notification" sistemi mimarisi anlatılıyor. Bu mimari projede gerçeklenecek back-end kısmıyla bazı yönlerden parelellik göstediği için incelendi.
+\noindent
+Bu mimaride 3 tip bildirim tetikleme yöntemi mevcut.
+\begin{itemize}
+  \item Veri tetiklemesi
+  \item Zaman tetiklemesi
+  \item Lokasyon tetiklemsi
+\end{itemize}
+Veri tetikleme yöntemi bizim sistemimize en uygun olan yöntem. Bu yöntemde kullanıcının belirlediği kurallara göre yeni veri akışı olduğunda bildirim tetikleniyor. Örnek olarak bir hisse senedin belli bir fiyata ulaştığında bildirim gönderilmesi gibi.
+\newline
+\noindent
+Zaman tetikleme yönteminde ise kullanıcı belirlene bir saatte ve yine isterse belirlediği kurallara göre bildirim alıyor. Örnek olarka kullanıcının her gün saat 15:00 borsa endeksini alması verilebilir.
+\newline
+\noindent
+Lokasyon tetiklemesi kullanıcın veya kullanıcın takip ettiği kişinin o anki konumunu bir kural olarak kullanarak bildirim sağlanması. Örneğin kullanıcı belli bir dükkanın önündeyse veya işte veya evde değilse trafik durumuyla ilgili bildirim alması verilebilir.
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\textwidth]{Report/images/notif.png}
+    \caption{Örnek bildirim lojistik mimarisi\cite{notif}}
+    \label{fig:mesh2}
+\end{figure}
+
+
+\subsection{Different ways to Authenticate a Web Application}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 \subsection{10. Özet}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 \subsection{Pazar Araştırması}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-
-\begin{table}[!ht]
-\center
-\begin{tabular}{c|c|c}
-Günlük Hayattan Sesler & Ortalama Ses Seviyesi(dB) & Hasar Oluşma Süresi\\
-\hline
-Duyulabilecek en düşük ses & 0  \\
-Nefel alıp verme & 10 \\
-Duvar saati sesi & 20 \\
-Fısıltı & 30 & Hasar mümkün değil\\
-Buzdolabı uğultusu  & 40 & \\
-Normal konuşma & 60\\
-Çamaşır makinası & 70 & \\
-Trafik gürültüsü(araba içinden) & 80-85 \\
-\hline
-Çim biçme makinası & 80-85 & 2 saat\\
-Motorsiklet & 95 & 50 dakika\\
-Yaklaşan tren & 100 & 15 dakika \\
-5m mesafede araba kornası & 100 & 15 dakikda\\
-Stadyumda tezahürat & 100 & 15 dakikda\\
-\hline
-Maksimum kulaklık sesi & 105-110 & 5 dakika\\
-Kulağın yanında bağırma & 110 & 2 dakika \\
-Sirenin yanında durma & 120 & Anında acı ve hasar\\
-Maytap & 140-150 & Anında acı ve hasar\\
-
-\end{tabular}
-\caption{Gün içersinde duyduğumuz seslerin düzeyleri ve etkileri \cite{cdcwebsite}}
-\label{tab:daily_db}
-\end{table}
 
 
 
