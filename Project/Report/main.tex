@@ -6,10 +6,10 @@
 \usepackage{lipsum}
 \usepackage{caption}
 \usepackage{pdfpages}
+
 \begin{document}
 
 \captionsetup[figure]{margin=1.5cm,font=small,labelfont={bf},name={Figure},labelsep=colon,textfont={it}}
-\captionsetup[table]{margin=1.5cm,font=small,labelfont={bf},name={Table},labelsep=colon,textfont={it}}
 \SetLipsumDefault{1}
 
 
@@ -22,7 +22,7 @@
 \linespread{1}
 \includegraphics{Report/images/gebze_logo.png}\\
 \vspace{\fill}
-{\Large Danışman: Doç.Dr. Hasari Çelebi}\\[0.5cm]
+{\Large Danışman: Prof. Hasari Çelebi}\\[0.5cm]
 {\Large Öğrenci: Muhammed Okumuş}\\[0.5cm]
 {\Large 151044017}\\[0.5cm]
 {\Large \today}
@@ -49,7 +49,6 @@
 \input{sections/1_introduction.tex}
 \input{sections/2_background.tex}
 \input{sections/3_methodology.tex}
-\newpage
 \input{sections/5_discussion.tex}
 
 
@@ -57,6 +56,7 @@
 % -------------------------------------------------------------------
 % Bibliography
 % -------------------------------------------------------------------
+\clearpage
 \newpage
 \bibliographystyle{plainnat}
 \bibliography{main} 
