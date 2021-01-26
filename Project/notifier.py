@@ -11,11 +11,11 @@ import time
 
 
 # SMS API Config
-postUrl='http://panel.vatansms.com/panel/smsgonder1Npost.php'
-musteriNo='39944'
-kullaniciAdi='905350274019'
-sifre='190wud40'
-orjinator="MHMD.OKUMUS"
+postUrl='xxx'
+musteriNo='xxx'
+kullaniciAdi='xxx'
+sifre='xxx'
+orjinator='xxx'
 
 tur='Normal' """ Normal yada Turkce """
 zaman=''
@@ -41,10 +41,10 @@ def send_SMS(sender, text, phone):
 
 # Twitter Config
 # Variables that contains the credentials to access Twitter API
-ACCESS_TOKEN = '3317234002-pkNlyFMghEXwkkE9ohdvLsgWLzHn9wMV5QJouoQ'
-ACCESS_SECRET = '6PKsu6SL15MSpsej26TnXE7LJyQbQtdV8U9Tc05PkAl2a'
-CONSUMER_KEY = 'nsRkI1DCQkhD07WsJXSfJ0ue4'
-CONSUMER_SECRET = 'temLXQ0yxbOdoqLAB7lsSUd3j6FSxkkPKkykwzWINLpGZhgHTa'
+ACCESS_TOKEN = 'xxx'
+ACCESS_SECRET = 'xxx'
+CONSUMER_KEY = 'xxx'
+CONSUMER_SECRET = 'xxx'
 
 # Setup access to API
 def connect_to_twitter_OAuth():
@@ -87,7 +87,7 @@ print("Tweepy version: " + tweepy.__version__)
 # Firebase Config
 cred = credentials.Certificate("firebase-sdk.json")
 firebase_admin.initialize_app(cred, {
-	'databaseURL': 'https://auth-development-265ec-default-rtdb.firebaseio.com'
+	'databaseURL': 'xxx'
 })
 ref = db.reference('/')
 published_tweets = set()
